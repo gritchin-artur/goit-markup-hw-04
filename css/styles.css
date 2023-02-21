@@ -1,0 +1,338 @@
+:root {
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --accent-color: #404bbf;
+  --primary-text-color: #2e2f42;
+  --white-color: #ffffff;
+  --grey-color: #f4f4fd;
+  --blue-color: #4d5ae5;
+  --space-grey-color: #434455;
+  --white-grey-color: #e7e9fc;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+ul,
+ol {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+img {
+  display: block;
+}
+address {
+  font-style: normal;
+}
+body {
+  font-family: var(--primary-font);
+  background-color: var(--white-color);
+  color: var(--primary-text-color);
+}
+
+/*------component-------*/
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.link {
+  text-decoration: none;
+}
+.indentation li:not(:last-child) {
+  margin-right: 40px;
+}
+
+.secret {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.subtitle-description {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+.subtitle {
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+.flex-centr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section {
+  padding: 120px 0;
+}
+
+/* header  */
+
+.navigation {
+  padding-left: 76px;
+}
+
+.top-header {
+  height: 72px;
+  outline: 1px solid #e7e9fc;
+}
+
+.studio-logo {
+  color: var(--primary-text-color);
+}
+.logo {
+  color: var(--blue-color);
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  margin-right: 76px;
+}
+.hat {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.hat:hover,
+.hat:focus {
+  color: var(--accent-color);
+}
+.contact {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--space-grey-color);
+}
+
+.contact:hover,
+.contact:focus {
+  color: var(--accent-color);
+}
+.hat.contact {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--space-grey-color);
+}
+/* -------------section 1 (Hero)----------- */
+
+h1 {
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: var(--white-color);
+}
+.hero {
+  background-color: var(--primary-text-color);
+  padding-bottom: 188px;
+  padding-top: 188px;
+}
+.hero-centr {
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.part-text {
+  text-align: center;
+}
+
+.button-order {
+  min-width: 130px;
+  padding: 16px 32px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white-color);
+  background-color: var(--blue-color);
+  cursor: pointer;
+  display: block;
+  margin: auto;
+}
+
+.button-order:hover,
+.button-order:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+/*------------ section 2 (About studio)---------*/
+
+.sub-studio {
+  padding-bottom: 0;
+}
+.manuscript li:not(:first-child) {
+  margin-left: 24px;
+}
+
+.text {
+  font-family: var(--primary-font);
+  width: 264px;
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--space-grey-color);
+}
+
+/* ------------section 3 (Portfolio)----------*/
+.back {
+  background-color: var(--grey-color);
+}
+.title-centr {
+  text-align: center;
+  padding-bottom: 72px;
+}
+.list-work li:not(:first-child) {
+  margin-left: 24px;
+}
+/* -------------section 4 (Team)------------ */
+
+.icon-team {
+  border-radius: 4px;
+}
+.card-team {
+  background-color: var(--white-color);
+  flex-basis: calc(100% - 72px / 4);
+  height: 380px;
+  box-shadow: 0px 1px 6px;
+  border-radius: 0px 0px 4px 4px;
+}
+.card-content-team {
+  width: 232px;
+  height: 56px;
+  margin-top: 32px;
+  margin-left: 16px;
+}
+.subtitle-team {
+  text-align: center;
+}
+.text-team {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--space-grey-color);
+}
+
+/* -----------footer---------- */
+
+.sub-footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.top-footer {
+  background-color: var(--primary-text-color);
+  height: 310px;
+}
+
+.studio-logo-footer {
+  color: var(--grey-color);
+}
+.about {
+  font-family: var(--primary-font);
+
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white-grey-color);
+}
+
+/* --------------Portfolio buttons------------- */
+.portfolio-menu {
+  padding-top: 40px;
+}
+.navigation-list-item {
+  padding: 12px 24px;
+  border-radius: 4px;
+  border: 1px solid #e7e9fc;
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--blue-gray-color);
+  background-color: var(--grey-color);
+  cursor: pointer;
+  margin-bottom: 72px;
+}
+
+.navigation-list-item:hover,
+.navigation-list-item:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+.references {
+  justify-content: center;
+  flex-direction: row;
+  margin: auto;
+  column-gap: 24px;
+}
+/* -----------Portfolio (pages)----------- */
+.card {
+  flex-basis: calc(100% - 48px / 3);
+}
+
+.advertising:nth-child(n + 7) {
+  margin-bottom: 120px;
+}
+.card-content {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  outline: 1px solid var(--white-grey-color);
+}
+.card-set {
+  gap: 48px 24px;
+}
