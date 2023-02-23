@@ -8,6 +8,7 @@
   --blue-color: #4d5ae5;
   --space-grey-color: #434455;
   --white-grey-color: #e7e9fc;
+  --footer-social: #31d0aa;
 }
 h1,
 h2,
@@ -172,6 +173,12 @@ h1 {
   background-color: var(--primary-text-color);
   padding-bottom: 188px;
   padding-top: 188px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office\ .jpg);
+  background-repeat: no-repeat;
 }
 .hero-centr {
   margin-bottom: 48px;
@@ -223,6 +230,28 @@ h1 {
   letter-spacing: 0.02em;
   color: var(--space-grey-color);
 }
+/* ------------------ About studio icons---------------- */
+
+.social-studio {
+  gap: 24px;
+}
+.studio-social {
+  padding-bottom: 8px;
+}
+.social-studio-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+  background-color: var(--grey-color);
+}
+
+.social-studio-link:hover,
+.social-studio-link:focus {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
 
 /* ------------section 3 (Portfolio)----------*/
 .back {
@@ -243,7 +272,7 @@ h1 {
 .card-team {
   background-color: var(--white-color);
   flex-basis: calc(100% - 72px / 4);
-  height: 380px;
+  height: 428px;
   box-shadow: 0px 1px 6px;
   border-radius: 0px 0px 4px 4px;
 }
@@ -262,6 +291,59 @@ h1 {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--space-grey-color);
+  margin-bottom: 8px;
+}
+
+/* -------------- Social list------------ */
+.social-list {
+  display: flex;
+}
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--blue-color);
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.social-list-icon {
+  fill: var(--grey-color);
+}
+
+/* ----------------Costumers----------------- */
+.customers-title {
+  padding-top: 130px;
+  padding-bottom: 72px;
+}
+.customers-list {
+  display: flex;
+  gap: 24px;
+}
+.customers-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #8e8f99;
+  width: 168px;
+  height: 88px;
+  border-radius: 4px;
+  background-color: var(--white-color);
+}
+.sub-customes {
+  padding-bottom: 120px;
+}
+.title-customes {
+  padding-top: 130px;
+  padding-bottom: 72px;
+}
+.customers-list-link:hover,
+.customers-list-link:focus {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 /* -----------footer---------- */
@@ -287,6 +369,45 @@ h1 {
   letter-spacing: 0.02em;
   color: var(--white-grey-color);
 }
+/* ---------------- Footer social list-------------- */
+.footer-social {
+  padding-bottom: 100px;
+  padding-left: 120px;
+}
+
+.footer-titl {
+  color: var(--white-color);
+}
+
+.social-footer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-footer-link:hover,
+.social-footer-link:focus {
+  background-color: var(--footer-social);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.social-footer-icon {
+  fill: var(--grey-color);
+}
+.social-footer {
+  gap: 16px;
+}
+.footer-titl {
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  padding-bottom: 16px;
+}
 
 /* --------------Portfolio buttons------------- */
 .portfolio-menu {
@@ -295,7 +416,7 @@ h1 {
 .navigation-list-item {
   padding: 12px 24px;
   border-radius: 4px;
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--white-grey-color);
   font-family: var(--primary-font);
   font-weight: 500;
   font-size: 16px;
@@ -322,8 +443,12 @@ h1 {
 /* -----------Portfolio (pages)----------- */
 .card {
   flex-basis: calc(100% - 48px / 3);
+  cursor: pointer;
 }
-
+.card:hover,
+.card:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
 .advertising:nth-child(n + 7) {
   margin-bottom: 120px;
 }
