@@ -224,7 +224,7 @@ h1 {
 
 .text {
   font-family: var(--primary-font);
-  width: 264px;
+  /* width: 264px; */
   margin-top: 8px;
   font-size: 16px;
   line-height: 1.5;
@@ -275,25 +275,19 @@ h1 {
 }
 /* -------------section 4 (Team)------------ */
 
-.icon-team {
-  border-radius: 4px;
-  min-width: 250px;
-}
 .card-team {
   background-color: var(--white-color);
-  flex-basis: calc(100% - 72px / 4);
-  height: 428px;
+  flex-basis: calc((100% - 72px) / 4);
   box-shadow: 0px 1px 6px;
   border-radius: 0px 0px 4px 4px;
+  flex-basis: auto;
 }
 .card-content-team {
-  width: 232px;
-  height: 56px;
-  margin-top: 32px;
-  margin-left: 16px;
+  padding: 32px 16px;
 }
 .subtitle-team {
   text-align: center;
+  margin-bottom: 8px;
 }
 .text-team {
   font-family: var(--primary-font);
@@ -309,7 +303,7 @@ h1 {
 .social-list {
   list-style: none;
   display: flex;
-  gap: 24px;
+  gap: 10px;
   justify-content: space-between;
 }
 .social-list-link {
@@ -328,10 +322,12 @@ h1 {
 .social-list-icon {
   fill: var(--grey-color);
 }
+.social-list-item {
+  flex-basis: calc((100% - 72px) / 4);
+}
 
 /* ----------------Costumers----------------- */
 .customers-list {
-  display: flex;
   gap: 24px;
 }
 .customers-list-link {
@@ -447,11 +443,7 @@ h1 {
   min-width: 250px;
 }
 /* -----------Portfolio (pages)----------- */
-.card {
-  flex-basis: calc(100% - 144px / 9);
-  cursor: pointer;
-  min-width: 250px;
-}
+
 .card:hover,
 .card:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -460,10 +452,12 @@ h1 {
 .advertising:nth-child(n + 7) {
   margin-bottom: 120px;
 }
+.advertising {
+  flex-basis: calc((100% - 72px) / 3);
+  min-width: 250px;
+}
 .card-content {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 16px;
+  padding: 32px 16px;
   outline: 1px solid var(--white-grey-color);
 }
 .card-set {
